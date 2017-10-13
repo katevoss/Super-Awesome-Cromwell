@@ -6,11 +6,11 @@
 <!---.. toctree::
    :maxdepth: 3--->
 
-   introduction/start
+ introduction/start
 
 **other Documentation:**
 
 <!---.. toctree::
    :maxdepth: 3--->
 
-   introduction/start
+   introduction/other
