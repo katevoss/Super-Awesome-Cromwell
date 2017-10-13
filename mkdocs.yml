@@ -1,4 +1,6 @@
 site_name: Cromwell, bro
 pages:
-- Overview: index.md
+- Things: 
+  - Stuff: index.md
+  - Current state: README.md
 theme: readthedocs
