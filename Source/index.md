@@ -1,16 +1,16 @@
 # Welcome to Cromwell's documentation!
 
 
-**NPI Pipeline Documentation:**
-
-<!---.. toctree::
-   :maxdepth: 2--->
-
-   introduction/start
-
-**Source Code Documentation:**
+**some Documentation:**
 
 <!---.. toctree::
    :maxdepth: 3--->
 
-   api/modules
+  TO BE FIXED LATER
+
+**other Documentation:**
+
+<!---.. toctree::
+   :maxdepth: 3--->
+
+TO BE FIXED LATER TOO
