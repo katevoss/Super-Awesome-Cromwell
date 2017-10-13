@@ -52,8 +52,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'NGI Pipeline'
-copyright = u'2014, National Genomics Infrastructure Sweden'
+project = u'Cromwell Engine'
+copyright = u'2017, DSP'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -196,7 +196,7 @@ htmlhelp_basename = 'NGIPipelinedoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_elements = {
+#latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
@@ -205,15 +205,15 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
-}
+#}
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-  ('index', 'NGIPipeline.tex', u'NGI Pipeline Documentation',
-   u'National Genomics Infrastructure Sweden', 'manual'),
-]
+#latex_documents = [
+#  ('index', 'NGIPipeline.tex', u'NGI Pipeline Documentation',
+#   u'National Genomics Infrastructure Sweden', 'manual'),
+#]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -276,10 +276,10 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'NGI Pipeline'
-epub_author = u'National Genomics Infrastructure Sweden'
-epub_publisher = u'National Genomics Infrastructure Sweden'
-epub_copyright = u'2014, National Genomics Infrastructure Sweden'
+#epub_title = u'NGI Pipeline'
+#epub_author = u'National Genomics Infrastructure Sweden'
+#epub_publisher = u'National Genomics Infrastructure Sweden'
+#epub_copyright = u'2014, National Genomics Infrastructure Sweden'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'NGI Pipeline'
@@ -319,7 +319,7 @@ epub_copyright = u'2014, National Genomics Infrastructure Sweden'
 #epub_post_files = []
 
 # A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']
+#epub_exclude_files = ['search.html']
 
 # The depth of the table of contents in toc.ncx.
 #epub_tocdepth = 3
