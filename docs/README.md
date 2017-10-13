@@ -1,125 +1,18 @@
-[![Build Status](https://travis-ci.org/broadinstitute/cromwell.svg?branch=develop)](https://travis-ci.org/broadinstitute/cromwell?branch=develop)
-[![codecov](https://codecov.io/gh/broadinstitute/cromwell/branch/develop/graph/badge.svg)](https://codecov.io/gh/broadinstitute/cromwell)
-[![Join the chat at https://gitter.im/broadinstitute/cromwell](https://badges.gitter.im/broadinstitute/cromwell.svg)](https://gitter.im/broadinstitute/cromwell?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-Cromwell
-========
+# Cromwell
 
 A [Workflow Management System](https://en.wikipedia.org/wiki/Workflow_management_system) geared towards [scientific workflows](https://en.wikipedia.org/wiki/Scientific_workflow_system). Cromwell is open sourced under the BSD 3-Clause license.
 
-<!---toc start-->
+## Getting Help
 
-* [Getting Help](#getting-help)
-  * [Website and User Guide](#website-and-user-guide)
-  * [Support Forum](#support-forum)
-  * [Gitter](#gitter)
-* [Requirements](#requirements)
-* [Building](#building)
-* [Installing](#installing)
-  * [Upgrading from 0.19 to 0.21](#upgrading-from-019-to-021)
-* [Command Line Usage](#command-line-usage)
-* [Getting Started with WDL](#getting-started-with-wdl)
-  * [WDL Support](#wdl-support)
-* [Configuring Cromwell](#configuring-cromwell)
-  * [Workflow Submission](#workflow-submission)
-  * [Database](#database)
-  * [SIGINT abort handler](#sigint-abort-handler)
-* [Security](#security)
-* [Backends](#backends)
-  * [Backend Job Limits](#backend-job-limits)
-  * [Backend Filesystems](#backend-filesystems)
-    * [Shared Local Filesystem](#shared-local-filesystem)
-    * [Google Cloud Storage Filesystem](#google-cloud-storage-filesystem)
-  * [Local Backend](#local-backend)
-  * [Google JES Backend](#google-jes-backend)
-    * [Configuring Google Project](#configuring-google-project)
-    * [Configuring Authentication](#configuring-authentication)
-      * [Application Default Credentials](#application-default-credentials)
-      * [Service Account](#service-account)
-      * [Refresh Token](#refresh-token)
-      * [User Service Account](#user-service-account)
-    * [Docker](#docker)
-    * [Monitoring](#monitoring)
-  * [GA4GH TES Backend](#ga4gh-tes-backend)
-    * [Configuring](#configuring)
-    * [Supported File Systems](#supported-file-systems)
-    * [Docker](#docker)
-    * [CPU, Memory and Disk](#cpu-memory-and-disk)
-  * [Sun GridEngine Backend](#sun-gridengine-backend)
-  * [HtCondor Backend](#htcondor-backend)
-    * [Caching configuration](#caching-configuration)
-    * [Docker](#docker)
-    * [CPU, Memory and Disk](#cpu-memory-and-disk)
-    * [Native Specifications](#native-specifications)
-  * [Spark Backend](#spark-backend)
-    * [Configuring Spark Project](#configuring-spark-project)
-    * [Configuring Spark Master and Deploy Mode](#configuring-spark-master-and-deploy-mode)
-    * [Spark runtime attributes](#spark-runtime-attributes)
-    * [Spark Environment](#spark-environment)
-    * [Sample Wdl](#sample-wdl)
-* [Runtime Attributes](#runtime-attributes)
-  * [Specifying Default Values](#specifying-default-values)
-  * [continueOnReturnCode](#continueonreturncode)
-  * [cpu](#cpu)
-  * [disks](#disks)
-    * [Boot Disk](#boot-disk)
-  * [zones](#zones)
-  * [docker](#docker)
-  * [failOnStderr](#failonstderr)
-  * [memory](#memory)
-  * [preemptible](#preemptible)
-* [Logging](#logging)
-* [Instrumentation](#instrumentation)
-  * [StatsD](#statsd)
-    * [Metrics](#metrics)
-* [Workflow Options](#workflow-options)
-* [Labels](#labels)
-  * [Custom Labels File](#custom-labels-file)
-  * [Label Format](#label-format)
-* [Call Caching](#call-caching)
-  * [Configuring Call Caching](#configuring-call-caching)
-  * [Call Caching Workflow Options](#call-caching-workflow-options)
-  * [Local Filesystem Options](#local-filesystem-options)
-* [Imports](#imports)
-* [Sub Workflows](#sub-workflows)
-  * [Execution](#execution)
-  * [Metadata](#metadata)
-* [REST API](#rest-api)
-  * [REST API Versions](#rest-api-versions)
-  * [POST /api/workflows/:version](#post-apiworkflowsversion)
-  * [POST /api/workflows/:version/batch](#post-apiworkflowsversionbatch)
-  * [GET /api/workflows/:version/query](#get-apiworkflowsversionquery)
-  * [POST /api/workflows/:version/query](#post-apiworkflowsversionquery)
-  * [PATCH /api/workflows/:version/:id/labels](#patch-apiworkflowsversionidlabels)
-  * [GET /api/workflows/:version/:id/status](#get-apiworkflowsversionidstatus)
-  * [GET /api/workflows/:version/:id/outputs](#get-apiworkflowsversionidoutputs)
-  * [GET /api/workflows/:version/:id/timing](#get-apiworkflowsversionidtiming)
-  * [GET /api/workflows/:version/:id/logs](#get-apiworkflowsversionidlogs)
-  * [GET /api/workflows/:version/:id/metadata](#get-apiworkflowsversionidmetadata)
-  * [POST /api/workflows/:version/:id/abort](#post-apiworkflowsversionidabort)
-  * [GET /api/workflows/:version/backends](#get-apiworkflowsversionbackends)
-  * [GET /api/workflows/:version/callcaching/diff](#get-apiworkflowsversioncallcachingdiff)
-  * [GET /engine/:version/stats](#get-engineversionstats)
-  * [GET /engine/:version/version](#get-engineversionversion)
-  * [GET /engine/:version/status](#get-engineversionstatus)
-  * [Error handling](#error-handling)
-* [Developer](#developer)
-  * [Generating table of contents on Markdown files](#generating-table-of-contents-on-markdown-files)
-  * [Generating and Hosting ScalaDoc](#generating-and-hosting-scaladoc)
-
-<!---toc end-->
-
-# Getting Help
-
-## Website and User Guide
+### Website and User Guide
 
 The [WDL website](https://software.broadinstitute.org/wdl/) is the best place to go for more information on both WDL and Cromwell. In particular new users should check out the [user guide](https://software.broadinstitute.org/wdl/userguide/) which has many tutorials, examples and other bits to get you started.
 
-## Support Forum
+### Support Forum
 
 If you have questions that aren't covered by the website you can ask them in the [support forum](http://gatkforums.broadinstitute.org/wdl/categories/ask-the-wdl-team).
 
-## Gitter
+### Gitter
 There is a [Cromwell gitter channel](https://gitter.im/broadinstitute/cromwell) where people can discuss Cromwell and related topics with both the developers and user community.
 
 # Requirements

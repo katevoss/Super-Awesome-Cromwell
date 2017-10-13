@@ -1,14 +1,9 @@
-# Welcome to Cromwell's documentation!
+# Welcome!
 
 
 ## First
-**some Documentation:**
 
- introduction/start
-
-
-### Farts
 **other Documentation:**
 
-   introduction/other
+
 
