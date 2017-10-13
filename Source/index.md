@@ -6,8 +6,7 @@
 <!---.. toctree::
    :maxdepth: 3--->
 
-   introduction/components
-   introduction/codeflow
+   introduction/start
 
 **Source Code Documentation:**
 
