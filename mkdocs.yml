@@ -9,7 +9,7 @@ pages:
   - Installing: Installing.md
   - Command Line usage: Command Line Usage.md
   - Getting started with WDL: Getting Started with WDL.md
-  - Configuring: Coniguring Cromwell.md
+  - Configuring: Configuring Cromwell.md
   - Security: Security.md
   - Backends: Backends.md
 #  - Runtime Attributes: 
