@@ -3,4 +3,21 @@ pages:
 - Things: 
   - Stuff: index.md
   - Current state: README.md
+  - Getting started: Getting Help.md
+  - Requirements:
+  - Building: 
+  - Installing: 
+  - Command Line usage:
+  - Getting started with WDL:
+  - Configuring:
+  - Security:
+  - Backends:
+  - Runtime Attributes:
+  - Logging:
+  - Workflow options:
+  - Labels:
+  - Call caching:
+  - Imports:
+  - Sub workflows:
+  - REST API: 
 theme: readthedocs
