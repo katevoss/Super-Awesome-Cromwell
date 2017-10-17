@@ -20,13 +20,9 @@ code.no-highlight {
     color: black;
 }
 
-/* Trying to make the code the right size */
+/* Making the code the right size */
 
 code.hljs {
-	font-size: 1em;
-}
-
-code, .rst-content tt {
 	font-size: 1em;
 }
 
