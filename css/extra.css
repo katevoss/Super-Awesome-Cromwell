@@ -20,6 +20,8 @@ code.no-highlight {
     color: black;
 }
 
+/* Trying to make the code the right size */
+
 code.hljs {
 	font-size: 1em;
 }
