@@ -2,7 +2,7 @@ site_name: Cromwell
 pages:
 - Things: 
   - Stuff: index.md
-  - Current state: README.md
+#  - Current state: README.md
   - Getting started: Getting Help.md
   - Requirements: Requirements.md
   - Building: Building.md
