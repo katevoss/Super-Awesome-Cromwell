@@ -6,7 +6,8 @@ site_author: Red Team at Broad Institute
 repo_url: https://github.com/broadinstitute/cromwell
 
 pages:
-- Welcome: README.md
+- Welcome: index.md
+- Cromwell2: README.md
 - Getting Started: Getting Help.md
 - Requirements: Requirements.md
 - Building: Building.md
