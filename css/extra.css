@@ -20,6 +20,10 @@ code.no-highlight {
     color: black;
 }
 
+code.hljs stylus {
+	font-size: 1em;
+}
+
 /* Definition List styles */
 
 dd {
