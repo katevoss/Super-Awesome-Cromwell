@@ -1,5 +1,3 @@
-# Getting Started with WDL
-
 For many examples on how to use WDL see [the WDL site](https://github.com/openwdl/wdl#getting-started-with-wdl)
 
 ## WDL Support

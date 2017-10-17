@@ -1,5 +1,3 @@
-# Command Line Usage
-
 For built-in documentation of Cromwell command line usage, run the Cromwell JAR file with no arguments:
 
 ```

@@ -1,5 +1,3 @@
-# Requirements
-
 The following is the toolchain used for development of Cromwell.  Other versions may work, but these are recommended.
 
 * [Scala 2.12.2](http://www.scala-lang.org/news/2.12.1#scala-212-notes)

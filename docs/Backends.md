@@ -1,5 +1,3 @@
-# Backends
-
 A backend represents a way to run the user's command specified in the `task` section.  Cromwell allows for backends conforming to
 the Cromwell backend specification to be plugged into the Cromwell engine.  Additionally, backends are included with the
 Cromwell distribution:

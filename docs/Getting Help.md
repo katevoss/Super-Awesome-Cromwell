@@ -1,5 +1,3 @@
-# Getting Help
-
 ## Website and User Guide
 
 The [WDL website](https://software.broadinstitute.org/wdl/) is the best place to go for more information on both WDL and Cromwell. In particular new users should check out the [user guide](https://software.broadinstitute.org/wdl/userguide/) which has many tutorials, examples and other bits to get you started.

@@ -1,5 +1,3 @@
-# Configuring Cromwell
-
 The configuration files are in
 [Hocon](https://github.com/typesafehub/config/blob/master/HOCON.md#hocon-human-optimized-config-object-notation).
 
