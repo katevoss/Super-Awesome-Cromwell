@@ -24,6 +24,10 @@ code.hljs {
 	font-size: 1em;
 }
 
+code, .rst-content tt {
+	font-size: 1em;
+}
+
 /* Definition List styles */
 
 dd {
